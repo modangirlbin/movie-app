@@ -1,0 +1,128 @@
+/********************************************************
+  CONTENTS
+********************************************************/
+
+.main_cont{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.tit_cont{
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin: 0 18px;
+  padding: 20px 0 5px 15px;
+  font-size: 18px;
+  &:before{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 17px;
+    background: #000;
+    content: '';
+  }
+}
+/* MainImage */
+.main_visual{
+  position: relative;
+  background: #000;
+  .box_visual{
+    position: absolute;
+    bottom: 0;
+    padding: 15px 10px;
+    font-weight: normal;
+    background: rgba(0,0,0,0.5);
+  }
+  .tit_visual{
+    font-size: 15px;
+    color: white;
+  }
+  .desc_visual{
+    margin-top: 5px;
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    color: #ddd;
+  }
+  .img_visual{
+    max-width:100%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* Grid Card */
+.list_cards{
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 12px;
+  .item_card{
+    flex-basis: 50%;
+    margin: 6px 0;
+    a{
+      display: block;
+      margin: 0 6px;
+      overflow: hidden;
+      position: relative;
+      display: block;
+      padding-top: 134%;
+      // font-size: 0;
+    }
+    .inner_card{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border-width:1px 0;
+      text-align: center;
+      white-space: nowrap;
+      background-color: #ccc;
+    }
+    .vote_card{
+      position: absolute;
+      top: 10px;
+      left: 13px;
+      padding: 0 6px 2px 2px;
+      border-radius: 9px;
+      color: #333;
+      font-size: 14px;
+      background: white;
+      box-shadow: 1px 1px 1px #aaa;
+      &::before{
+        display: inline-block;
+        color: red;
+        content: '★';
+        
+      }
+    }
+    .thumb_card{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      max-height: none;
+      width: 100%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/* button */
+.wrap_btn{
+  margin: 0 18px;
+  .btn_more{
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    background: #000;
+  }
+}
