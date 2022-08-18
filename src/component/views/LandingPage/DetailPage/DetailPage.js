@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-function MovieDetail(props) {
+function DetailPage(props) {
 
   useEffect(() => {
 
@@ -13,4 +13,4 @@ function MovieDetail(props) {
   );
 }
 
-export default MovieDetail;
+export default DetailPage;
