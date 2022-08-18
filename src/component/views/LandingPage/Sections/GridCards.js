@@ -7,7 +7,7 @@ function GridCards(props) {
       <a href={`/movie/${props.movieId}`}>
         <span className='inner_card'>
           <img src={props.image} className='thumb_card' alt={props.movieName} />
-          <span className='vote_card'>{props.movieVote}</span>
+          <span className='vote_card'><span className='offscreen'>평점</span>{props.movieVote}</span>
         </span>
       </a>
     </li>

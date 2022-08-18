@@ -9,30 +9,45 @@
 .tit_cont{
   position: relative;
   max-width: 1000px;
-  margin: 0 auto;
-  margin: 0 18px;
-  padding: 20px 0 5px 15px;
-  font-size: 18px;
-  &:before{
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    width: 3px;
-    height: 17px;
-    background: #000;
-    content: '';
-  }
+  margin: 0 auto;  margin: 0 18px;
+  padding: 20px 0 5px 0;
+  font-size: 17px;
+  // &:before{
+  //   display: inline-block;
+  //   position: absolute;
+  //   left: 0;
+  //   width: 3px;
+  //   height: 17px;
+  //   background: #000;
+  //   content: '';
+  // }
 }
 /* MainImage */
 .main_visual{
   position: relative;
-  background: #000;
-  .box_visual{
+  .img_visual{
+    display: block;
+    position: relative;
+    &::after{
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 36%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.79) 100%);
+      content: '';
+    }
+    .img{
+      width:100%;
+    }
+  }
+  .info_visual{
     position: absolute;
     bottom: 0;
-    padding: 15px 10px;
+    padding: 40px 10px 15px;
     font-weight: normal;
-    background: rgba(0,0,0,0.5);
+    // background: linear-gradient(to top, black 60%, transparent 100%);
+    background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.849475) 50%, rgba(0,0,0,0.792332) 51%, rgba(0,0,0,0) 100%);
   }
   .tit_visual{
     font-size: 15px;
@@ -47,11 +62,6 @@
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
     color: #ddd;
-  }
-  .img_visual{
-    max-width:100%;
-    margin: 0 auto;
-    display: block;
   }
 }
 
@@ -83,7 +93,8 @@
       border-width:1px 0;
       text-align: center;
       white-space: nowrap;
-      background-color: #ccc;
+      // background-color: #ccc;
+  
     }
     .vote_card{
       position: absolute;
@@ -106,7 +117,6 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      max-height: none;
       width: 100%;
       transform: translate(-50%, -50%);
     }
@@ -123,6 +133,6 @@
     padding: 10px 0;
     text-align: center;
     color: #fff;
-    background: #000;
+    background: #222;
   }
 }
