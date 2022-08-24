@@ -22,7 +22,7 @@ function Header(props) {
         <span className='offscreen'>내 예매권 보기</span>
       </a>
       <button className='btn_gnb' type='button' aria-haspopup={isOpen} aria-expanded={isOpen} aria-controls='gnb' onClick={(e)=>toggleMenu(e)}><span className="offscreen">메인 메뉴</span></button>
-      <nav className={isOpen ? "gnb on" : "gnb"}>
+      <nav id='gnb' className={isOpen ? "gnb on" : "gnb"}>
         <h2 className='offscreen'>메인메뉴</h2>
         <ul className='list_gnb'>
           <li className='item_gnb'><a href="#none">예매하기</a></li>
