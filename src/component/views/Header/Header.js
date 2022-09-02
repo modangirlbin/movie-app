@@ -14,8 +14,8 @@ function Header(props) {
   return (
     <header id='header' className='header'>
       <h1 className='title_logo'>
-        <a href='#none' alt='메가박스 홈'>
-          <img src='https://img.megabox.co.kr/static/mb/images/common/ci/logo-white_new.png' alt='' />
+        <a href='#none'>
+          <img src='https://img.megabox.co.kr/static/mb/images/common/ci/logo-white_new.png' alt='메가박스 홈' />
         </a>
       </h1>
       <a href='#none' className='link_ticket'>
