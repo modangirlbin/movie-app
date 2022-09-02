@@ -26,7 +26,7 @@ function LandingPage(){
       //요래하면 20개가 계속 덮어 씌워짐
       // setMovies([...response.results]);
       setMovies([...Movies, ...response.results]);
-      setMainMovieImage(response.results[2]);
+      setMainMovieImage(response.results[9]);
       // 메인이미지 미니언즈 고정
       // setMainMovieImage(response.results.find(obj =>{
       //   return obj.id === 438148;
