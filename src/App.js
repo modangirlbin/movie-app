@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/movie-app" element={<LandingPage />} />
           <Route exact path="/movie/:movieId" element={<DetailPage />} />
         </Routes>
       </Router>
