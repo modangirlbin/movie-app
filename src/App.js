@@ -6,7 +6,7 @@ import DetailPage from './component/views/DetailPage/DetailPage';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
         <Route exact path="/" element={<LandingPage />} />
           <Route exact path="/movie-app" element={<LandingPage />} />
