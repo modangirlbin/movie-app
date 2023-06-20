@@ -1,9 +1,18 @@
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
-import LandingPage from './component/views/LandingPage/LandingPage'
+import Footer from './component/views/Footer/Footer';
+import LandingPage from './component/views/LandingPage/LandingPage';
+import DetailPage from './component/views/DetailPage/DetailPage';
 function App() {
   return (
     <div className="App">
-      <LandingPage></LandingPage>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/movie/:movieId" element={<DetailPage />} />
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }

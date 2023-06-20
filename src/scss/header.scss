@@ -57,8 +57,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     background: url(https://img.megabox.co.kr/static/mb/images/common/ico/ico-burger-w.png) no-repeat 50%/28px;
   }
   
@@ -88,6 +88,30 @@
     }
   }
 }
+
+// sub header
+
+.link_back{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: url(../img/ico_back.png) no-repeat 50%/24px;
+}
+.title_sub{
+  margin: 0 60px;
+  font-size: 17px;
+  line-height: 60px;
+  font-weight: normal;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+  
 // .wrap_gnb{
 //   width: 290px;
 //   height: 100%;

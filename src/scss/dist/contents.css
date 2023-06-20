@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/********************************************************
+  CONTENTS
+********************************************************/
+.main_cont {
+  max-width: 1000px;
+  min-height: calc(100vh - 68px);
+  margin: 0 auto;
+}
+
+.tit_cont {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin: 0 18px;
+  padding: 20px 0 5px 0;
+  font-size: 17px;
+}
+
+/* MainImage */
+.main_visual {
+  position: relative;
+}
+.main_visual .img_visual {
+  display: block;
+  position: relative;
+}
+.main_visual .img_visual::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0) 36%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.79) 100%);
+  content: "";
+}
+.main_visual .img_visual .img {
+  width: 100%;
+}
+.main_visual .info_visual {
+  position: absolute;
+  bottom: 0;
+  padding: 40px 10px 15px;
+  font-weight: normal;
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.849475) 50%, rgba(0, 0, 0, 0.792332) 51%, rgba(0, 0, 0, 0) 100%);
+}
+.main_visual .tit_visual {
+  font-size: 15px;
+  color: white;
+}
+.main_visual .desc_visual {
+  margin-top: 5px;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  color: #ddd;
+}
+
+/* Grid Card */
+.list_cards {
+  -webkit-display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 12px;
+}
+.list_cards .item_card {
+  flex-basis: 50%;
+  margin: 6px 0;
+}
+.list_cards .item_card a {
+  display: block;
+  margin: 0 6px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  padding-top: 134%;
+}
+.list_cards .item_card .inner_card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-width: 1px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.list_cards .item_card .vote_card {
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  padding: 0 6px 2px 2px;
+  border-radius: 9px;
+  color: #333;
+  font-size: 14px;
+  background: white;
+  box-shadow: 1px 1px 1px #aaa;
+}
+.list_cards .item_card .vote_card::before {
+  display: inline-block;
+  color: red;
+  content: "★";
+}
+.list_cards .item_card .thumb_card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/* button */
+.wrap_btn {
+  margin: 0 18px;
+}
+.wrap_btn .btn_more {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  background: #222;
+}
