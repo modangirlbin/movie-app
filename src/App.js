@@ -8,12 +8,12 @@ function App() {
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route exact path="/" element={<LandingPage />} />
-          <Route exact path="/movie-app" element={<LandingPage />} />
-          <Route exact path="/movie/:movieId" element={<DetailPage />} />
+          <Route path="/" element={<LandingPage />} />
+          {/* <Route path="/movie-app/" element={<DetailPage />} /> */}
+          <Route path="/:movieId" element={<DetailPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }
