@@ -16,7 +16,7 @@ function HeaderSub(props) {
       <h1 className='title_sub'>
         {props.title}
       </h1>
-      <a href='/' className='link_back'>
+      <a href='/movie-app' className='link_back'>
         <span className='offscreen'>뒤로 가기</span>
       </a>
       <button className='btn_gnb' type='button' aria-haspopup={isOpen} aria-expanded={isOpen} aria-controls='gnb' onClick={(e)=>toggleMenu(e)}><span className="offscreen">메인 메뉴</span></button>
