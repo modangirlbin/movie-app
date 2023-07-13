@@ -2,6 +2,9 @@
   HEADER
 ********************************************************/
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   top: 0;
   height: 60px;
@@ -33,18 +36,12 @@
   height: 60px;
 }
 .header .link_ticket {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: block;
   width: 50px;
   height: 49px;
   background: url(https://img.megabox.co.kr/static/mb/images/common/ico/ico-ticket-w.png) no-repeat 50%/28px;
 }
 .header .btn_gnb {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 60px;
   height: 60px;
   background: url(https://img.megabox.co.kr/static/mb/images/common/ico/ico-burger-w.png) no-repeat 50%/28px;
@@ -59,7 +56,7 @@
   background: rgba(255, 255, 255, 0.3);
 }
 .header .item_gnb a {
-  display: inline-block;
+  display: block;
   width: 100px;
   margin: 5px 0;
   font-size: 13px;
@@ -74,10 +71,7 @@
 }
 
 .link_back {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: block;
   width: 60px;
   height: 60px;
   background: url(../img/ico_back.png) no-repeat 50%/24px;

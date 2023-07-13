@@ -16,12 +16,12 @@ function HeaderSub(props) {
 
   return (
     <header id='header' className='header'>
-      <h1 className='title_sub'>
-        {props.title}
-      </h1>
       <a href='#/' className='link_back'>
         <span className='offscreen'>뒤로 가기</span>
       </a>
+      <h1 className='title_sub'>
+        {props.title}
+      </h1>
       <button className='btn_gnb' type='button' aria-haspopup={isOpen} aria-expanded={isOpen} aria-controls='gnb' onClick={(e)=>toggleMenu(e)}><span className="offscreen">메인 메뉴</span></button>
       <nav id='gnb' className={isOpen ? "gnb on" : "gnb"}>
         <h2 className='offscreen'>메인메뉴</h2>

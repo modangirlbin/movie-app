@@ -17,14 +17,14 @@ function Header(props) {
 
   return (
     <header id='header' className='header'>
+      <a href='#none' onClick={preventAnchor} className='link_ticket'>
+        <span className='offscreen'>내 예매권 보기</span>
+      </a>
       <h1 className='title_logo'>
         <a href='#/'>
           <img src='https://img.megabox.co.kr/static/mb/images/common/ci/logo-white_new.png' alt='메가박스 홈' />
         </a>
       </h1>
-      <a href='#none' onClick={preventAnchor} className='link_ticket'>
-        <span className='offscreen'>내 예매권 보기</span>
-      </a>
       <button className='btn_gnb' type='button' aria-haspopup={isOpen} aria-expanded={isOpen} aria-controls='gnb' onClick={(e)=>toggleMenu(e)}><span className="offscreen">메인 메뉴</span></button>
       <nav id='gnb' className={isOpen ? "gnb on" : "gnb"}>
         <h2 className='offscreen'>메인메뉴</h2>
