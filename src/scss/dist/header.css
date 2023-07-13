@@ -58,7 +58,7 @@
 .header .item_gnb a {
   display: block;
   width: 100px;
-  margin: 5px 0;
+  margin: 5px auto;
   font-size: 13px;
   line-height: 26px;
   font-weight: bold;
