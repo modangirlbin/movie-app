@@ -30,7 +30,7 @@
 }
 .header .title_logo a {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 .header .title_logo a img {
   height: 60px;

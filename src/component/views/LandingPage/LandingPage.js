@@ -48,7 +48,7 @@ function LandingPage(){
   return (
     <>
       <Header />
-      <div className="main">
+      <main className="main">
         {/* MainMovieImage가져오기 전에 렌더링 되면 에러남 */}
         {MainMovieImage &&
           <MainImage 
@@ -57,7 +57,7 @@ function LandingPage(){
             desc={MainMovieImage.overview}
           />
         }
-        <div className="main_cont">
+        <section className="main_cont">
           <h2 className="tit_cont"># 상영예정작</h2>
           {/* 20개 하나하나 컨트롤할수 있도록 map */}
           <ul className="list_cards">
@@ -77,8 +77,8 @@ function LandingPage(){
           <div className='wrap_btn'>
             <button className="btn_more" onClick={loadMoreItems}> Load More</button>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   )
 }

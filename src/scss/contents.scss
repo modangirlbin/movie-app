@@ -3,30 +3,18 @@
 ********************************************************/
 .main_cont{
   max-width: 1000px;
-  min-height: calc(100vh - 68px);
+  // min-height: calc(100vh - 68px);
   margin: 0 auto;
 }
 .tit_cont{
   position: relative;
-  max-width: 1000px;
-  margin: 0 auto;  margin: 0 18px;
-  padding: 20px 0 5px 0;
+  padding: 20px 18px;
   font-size: 17px;
-  // &:before{
-  //   display: inline-block;
-  //   position: absolute;
-  //   left: 0;
-  //   width: 3px;
-  //   height: 17px;
-  //   background: #000;
-  //   content: '';
-  // }
 }
 /* MainImage */
 .main_visual{
   position: relative;
   .img_visual{
-    display: block;
     position: relative;
     &::after{
       display: block;
@@ -46,7 +34,6 @@
     bottom: 0;
     padding: 40px 10px 15px;
     font-weight: normal;
-    // background: linear-gradient(to top, black 60%, transparent 100%);
     background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.849475) 50%, rgba(0,0,0,0.792332) 51%, rgba(0,0,0,0) 100%);
   }
   .tit_visual{
@@ -67,17 +54,14 @@
 
 /* Grid Card */
 .list_cards{
-  -webkit-display: flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+  column-gap: 12px;
+  padding: 0 18px;
   .item_card{
-    flex-basis: 50%;
-    margin: 6px 0;
     a{
       display: block;
-      margin: 0 6px;
       overflow: hidden;
       position: relative;
       display: block;
@@ -125,11 +109,10 @@
 
 /* button */
 .wrap_btn{
-  margin: 0 18px;
+  padding: 12px 18px;
   .btn_more{
     display: block;
     width: 100%;
-    margin-top: 6px;
     padding: 10px 0;
     text-align: center;
     color: #fff;

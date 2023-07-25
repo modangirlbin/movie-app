@@ -8,7 +8,8 @@ function Header(props) {
   const toggleMenu = (e) => {
     setMenu(isOpen => !isOpen); // on,off
     console.log(e.target);
-    e.target.Attr('aria-haspopup', 'false')
+    e.target.Attr('aria-haspopup', 'false');
+    e.target.parentElement.Attr('aria-hidden', 'true');
   }
   
   function preventAnchor(e) {

@@ -4,16 +4,12 @@
 ********************************************************/
 .main_cont {
   max-width: 1000px;
-  min-height: calc(100vh - 68px);
   margin: 0 auto;
 }
 
 .tit_cont {
   position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  margin: 0 18px;
-  padding: 20px 0 5px 0;
+  padding: 20px 18px;
   font-size: 17px;
 }
 
@@ -22,7 +18,6 @@
   position: relative;
 }
 .main_visual .img_visual {
-  display: block;
   position: relative;
 }
 .main_visual .img_visual::after {
@@ -61,19 +56,14 @@
 
 /* Grid Card */
 .list_cards {
-  -webkit-display: flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 12px;
-}
-.list_cards .item_card {
-  flex-basis: 50%;
-  margin: 6px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+  column-gap: 12px;
+  padding: 0 18px;
 }
 .list_cards .item_card a {
   display: block;
-  margin: 0 6px;
   overflow: hidden;
   position: relative;
   display: block;
@@ -115,12 +105,11 @@
 
 /* button */
 .wrap_btn {
-  margin: 0 18px;
+  padding: 12px 18px;
 }
 .wrap_btn .btn_more {
   display: block;
   width: 100%;
-  margin-top: 6px;
   padding: 10px 0;
   text-align: center;
   color: #fff;
