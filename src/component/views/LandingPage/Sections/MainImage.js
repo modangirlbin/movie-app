@@ -4,7 +4,10 @@ function MainImage(props) {
   return (
     <section className="main_visual">
       <div className="img_visual">
-        <img className="img" src="https://image.tmdb.org/t/p/w1280/1heBUD8o0sgdqLWyeXkylR2POKb.jpg" alt="미니언즈2" />
+        <picture>
+          <source className="img" srcset="https://image.tmdb.org/t/p/w500/1heBUD8o0sgdqLWyeXkylR2POKb.jpg" media="(max-width:500px)" alt="미니언즈2"/>
+          <img className="img" srcset="https://image.tmdb.org/t/p/w1280/1heBUD8o0sgdqLWyeXkylR2POKb.jpg 2x" src="https://image.tmdb.org/t/p/w1280/1heBUD8o0sgdqLWyeXkylR2POKb.jpg" alt="미니언즈2" />
+        </picture>
       </div>
       <div className="info_visual">
         <h2 className="tit_visual">미니언즈 2</h2>
