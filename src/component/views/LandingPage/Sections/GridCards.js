@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../../../scss/import.scss';
 
 function GridCards(props) {
   return (

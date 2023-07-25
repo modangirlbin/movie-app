@@ -4,7 +4,6 @@ import { API_URL, API_KEY, IMAGE_BASE_URL} from '../../Config';
 import GridCards from './Sections/GridCards';
 import MainImage from './Sections/MainImage';
 import Header from '../Header/Header';
-import '../../../scss/import.scss';
 
 function LandingPage(){
 

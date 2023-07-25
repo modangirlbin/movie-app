@@ -1,11 +1,11 @@
 .sub{
-  min-height: calc(100vh - 68px);
+  // min-height: calc(100vh - 68px);
 }
 .sub_visual{
   display: block;
   position: relative;
   height: 500px;
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   &::before{
     position: absolute;
@@ -18,21 +18,15 @@
   }
 }
 .area_poster{
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  width: 100%;
-  padding: 0 10px;
-  transform: translateX(-50%);
-  box-sizing: border-box;
+  display: flex;
 }
 .thumb_sub{
-  position: absolute;
   width: 100px;
 }
 .info_visual{
+  flex-grow: 1;
   min-height: 150px;
-  padding: 10px 10px 10px 110px;
+  padding: 10px;
   box-sizing: border-box;
   color: #fff;
   background-color: rgba(0, 0, 0, .4);
@@ -63,12 +57,15 @@
 }
 
 .sub_cont{
-  padding: 40px 18px 25px;
+  position: relative;
+  margin-top: -168px;
+  padding: 0 18px 80px;
   .copy{
     display: block;
-    padding-bottom: 20px;
+    margin-top: 35px;
   }
   .overview{
+    margin-top: 20px;
     font-size: 13px;
     line-height: 23px;
   }

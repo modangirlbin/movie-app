@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import '../../../scss/import.scss';
 
 function HeaderSub(props) {
   const [isOpen, setMenu] = useState(false);
