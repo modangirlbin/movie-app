@@ -14,19 +14,39 @@
 /* MainImage */
 .main_visual{
   position: relative;
+  &::before{
+    content: '';
+    display: block;
+    padding-top: 150%;
+  }
   .img_visual{
-    position: relative;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    &::before{
+      content: '';
+      display: block;
+      padding-top: 150%;
+    }
     &::after{
+      content: '';
       display: block;
       position: absolute;
       top: 0;
       width: 100%;
       height: 100%;
       background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 36%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.79) 100%);
-      content: '';
     }
     .img{
+      position: absolute;
+      top: 0;
       width:100%;
+      height: 100%;
+    }
+    img{
+      width: 100%;
     }
   }
   .info_visual{
@@ -66,7 +86,6 @@
       position: relative;
       display: block;
       padding-top: 134%;
-      // font-size: 0;
     }
     .inner_card{
       position: absolute;
@@ -77,8 +96,12 @@
       border-width:1px 0;
       text-align: center;
       white-space: nowrap;
-      // background-color: #ccc;
-  
+      background: #eee;
+      &::before{
+        content: '';
+        display: block;
+        padding-top: 150%;
+      }
     }
     .vote_card{
       position: absolute;

@@ -49,13 +49,15 @@ function LandingPage(){
       <Header />
       <main className="main">
         {/* MainMovieImage가져오기 전에 렌더링 되면 에러남 */}
-        {MainMovieImage &&
-          <MainImage 
-            image={`${IMAGE_BASE_URL}w1280${MainMovieImage.poster_path}`}
-            title={MainMovieImage.title}
-            desc={MainMovieImage.overview}
-          />
-        }
+        <section className="main_visual">
+          {MainMovieImage &&
+            <MainImage 
+              image={`${IMAGE_BASE_URL}w1280${MainMovieImage.poster_path}`}
+              title={MainMovieImage.title}
+              desc={MainMovieImage.overview}
+            />
+          }
+        </section>
         <section className="main_cont">
           <h2 className="tit_cont"># 상영예정작</h2>
           {/* 20개 하나하나 컨트롤할수 있도록 map */}
