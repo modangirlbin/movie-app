@@ -28,7 +28,7 @@ function DetailPage(props) {
       <HeaderSub title={Movie.title} />
       <main className='sub'>
         <MovieInfo 
-          image={`${IMAGE_BASE_URL}w720${Movie.poster_path}`}
+          image={`${IMAGE_BASE_URL}w500${Movie.poster_path}`}
           backdrop={`${IMAGE_BASE_URL}original${Movie.backdrop_path}`}
           title={Movie.title}
           desc={Movie.overview}

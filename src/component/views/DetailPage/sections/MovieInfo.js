@@ -7,7 +7,7 @@ function MovieInfo(props) {
       <article className='sub_cont'>
         <div className="area_poster">
           <div className="thumb_sub">
-            <img className="thumb_img" src={props.image} alt="{props.title}" />
+            <img className="thumb_img" src={props.image} alt={props.title} />
           </div>
           <div className="info_visual">
             <h2 className="tit_thumb">{props.title}</h2>
