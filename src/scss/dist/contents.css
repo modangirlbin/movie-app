@@ -141,3 +141,25 @@
   color: #fff;
   background: #222;
 }
+
+/* bottom nav */
+.wrap_nav_bottom {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 100;
+  box-shadow: 0 -1px 2px 0 rgba(255, 255, 255, 0.1);
+}
+
+.list_nav_bottom {
+  display: flex;
+}
+.list_nav_bottom .item_nav_bottom {
+  flex: 1;
+}
+.list_nav_bottom .item_nav_bottom .link_nav_bottom {
+  display: block;
+  text-align: center;
+}

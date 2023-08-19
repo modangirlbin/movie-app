@@ -4,6 +4,7 @@ import { API_URL, API_KEY, IMAGE_BASE_URL} from '../../Config';
 import GridCards from './Sections/GridCards';
 import MainImage from './Sections/MainImage';
 import Header from '../Header/Header';
+// import BottomNav from '../BottomNav';
 
 function LandingPage(){
 
@@ -81,6 +82,7 @@ function LandingPage(){
             <button className="btn_more" onClick={loadMoreItems}> Load More</button>
           </div>
         </section>
+        {/* <BottomNav /> */}
       </main>
     </>
   )

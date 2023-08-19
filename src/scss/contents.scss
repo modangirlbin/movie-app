@@ -1,6 +1,9 @@
 /********************************************************
   CONTENTS
 ********************************************************/
+main{
+  // margin-top: -60px;
+}
 .main_cont{
   max-width: 1000px;
   // min-height: calc(100vh - 68px);
@@ -140,5 +143,26 @@
     text-align: center;
     color: #fff;
     background: #222;
+  }
+}
+
+/* bottom nav */
+.wrap_nav_bottom{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 100;
+  box-shadow: 0 -1px 2px 0 rgba(255,255,255,.1);
+}
+.list_nav_bottom{
+  display: flex;
+  .item_nav_bottom{
+    flex: 1;
+    .link_nav_bottom{
+      display: block;
+      text-align: center;
+    }
   }
 }

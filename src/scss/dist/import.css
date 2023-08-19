@@ -325,7 +325,7 @@ body, button, h1, h2, h3, h4, h5, h6, input, select, table, textarea {
   content: "";
 }
 
-.area_poster {
+.area_summary {
   position: absolute;
   bottom: 15px;
   left: 50%;
@@ -335,7 +335,7 @@ body, button, h1, h2, h3, h4, h5, h6, input, select, table, textarea {
   box-sizing: border-box;
 }
 
-.thumb_sub {
+.thumb_summary {
   position: absolute;
   width: 100px;
 }
