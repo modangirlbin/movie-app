@@ -1,75 +1,77 @@
 .sub{
   // min-height: calc(100vh - 68px);
-}
-.sub_visual{
-  display: block;
-  position: relative;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  &::before{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0,0,0,.5);
-    content: '';
+  .sub_visual{
+    display: block;
+    position: relative;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    &::before{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,.5);
+      content: '';
+    }
   }
 }
-.area_poster{
+.area_summary{
   display: flex;
-}
-.thumb_sub{
-  width: 100px;
-}
-.info_visual{
-  flex-grow: 1;
-  min-height: 150px;
-  padding: 10px;
-  box-sizing: border-box;
-  color: #fff;
-  background-color: rgba(0, 0, 0, .4);
-  span{
-    display: block;
-    font-size: 12px;
-    line-height: 20px;
-    white-space: nowrap;
+  .thumb_summary{
+    flex-shrink: 0;
+    width: 100px;
+    height: 150px;
     overflow: hidden;
-    text-overflow: ellipsis;
   }
-  .tit_thumb{
-    display: block;
-    font-size: 14px;    
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .tit_original{
-    margin-top: 2px;
-    font-size: 12px;
-    color: #999;
-  }
-  .date{
-    margin-top: 7px;
-    color: cyan;
+  .info_summary{
+    flex-grow: 1;
+    width: calc(100% - 100px);
+    min-height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
+    .time, .rate{
+      display: block;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .tit{
+      font-size: 14px;    
+      @include ellipse;
+    }
+    .tit_original{
+      margin-top: 2px;
+      font-size: 12px;
+      color: #999;
+    }
+    .date{
+      display: block;
+      margin-top: 7px;
+      font-size: 12px;
+      line-height: 20px;
+      color: cyan;
+    }
   }
 }
-
-.sub_cont{
+.sub_contents{
   position: relative;
   margin-top: -168px;
   padding: 0 18px 80px;
-  .copy{
+}  
+.area_detail{
+  .copy_detail{
     display: block;
     margin-top: 35px;
   }
-  .overview{
+  .story_detail{
     margin-top: 20px;
     font-size: 13px;
     line-height: 23px;
   }
-}  
+}
 
   
   
