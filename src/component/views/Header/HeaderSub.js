@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 
 function HeaderSub(props) {
   const [isOpen, setMenu] = useState(false);
@@ -9,12 +9,20 @@ function HeaderSub(props) {
     e.target.Attr('aria-haspopup', 'false')
   }
 
+  // 스크롤시 헤더색 변경
+  const [ scroll, setScroll ] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
+
   function preventAnchor(e) {
     e.preventDefault();
   }
 
   return (
-    <header id='header' className='header'>
+    <header id='header' className={scroll ? "header on" : "header"}>
       <a href='#/' className='link_back'>
         <span className='offscreen'>뒤로 가기</span>
       </a>

@@ -1,7 +1,8 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import '../../../scss/import.scss';
 
-function Header(props) {
+export default function Header(props) {
+  // 햄버거 메뉴 열기,닫기
   const [isOpen, setMenu] = useState(false);
   
   const toggleMenu = (e) => {
@@ -10,13 +11,22 @@ function Header(props) {
     e.target.Attr('aria-haspopup', 'false');
     e.target.parentElement.Attr('aria-hidden', 'true');
   }
+
+  // 스크롤시 헤더색 변경
+  const [ scroll, setScroll ] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
   
-  function preventAnchor(e) {
+  // 링크막기
+  const preventAnchor = (e) => {
     e.preventDefault();
   }
 
   return (
-    <header id='header' className='header'>
+    <header id='header' className={scroll ? "header on" : "header"}>
       <a href='#none' onClick={preventAnchor} className='link_ticket'>
         <span className='offscreen'>내 예매권 보기</span>
       </a>
@@ -37,5 +47,3 @@ function Header(props) {
     </header>
   );
 }
-
-export default Header; 

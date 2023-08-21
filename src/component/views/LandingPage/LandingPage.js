@@ -4,7 +4,7 @@ import { API_URL, API_KEY, IMAGE_BASE_URL} from '../../Config';
 import GridCards from './Sections/GridCards';
 import MainImage from './Sections/MainImage';
 import Header from '../Header/Header';
-// import BottomNav from '../BottomNav';
+import BottomNav from '../BottomNav';
 
 function LandingPage(){
 
@@ -19,7 +19,6 @@ function LandingPage(){
     const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=ko&page=1`;
     
     fetchMovies(endpoint);
-    console.log(endpoint)
   }, []);
 
   const fetchMovies = (endpoint) => {
@@ -50,7 +49,7 @@ function LandingPage(){
       <Header />
       <main className="main">
         {/* MainMovieImage가져오기 전에 렌더링 되면 에러남 */}
-        <section className="main_visual">
+        <section className="section_visual">
           {MainMovieImage &&
             <MainImage 
               image={`${IMAGE_BASE_URL}w1280${MainMovieImage.poster_path}`}
@@ -59,7 +58,7 @@ function LandingPage(){
             />
           }
         </section>
-        <section className="main_cont">
+        <section className="section_cont">
           <h2 className="tit_cont"># 상영예정작</h2>
           {/* 20개 하나하나 컨트롤할수 있도록 map */}
           <ul className="list_cards">
@@ -78,11 +77,11 @@ function LandingPage(){
             ))
             }
           </ul>
-          <div className='wrap_btn'>
+          <div className='box_btn'>
             <button className="btn_more" onClick={loadMoreItems}> Load More</button>
           </div>
         </section>
-        {/* <BottomNav /> */}
+        <BottomNav />
       </main>
     </>
   )

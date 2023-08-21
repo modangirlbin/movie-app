@@ -1,21 +1,21 @@
 /********************************************************
   CONTENTS
 ********************************************************/
-main{
-  // margin-top: -60px;
+main.main, main.sub{
+  margin-top: -55px;
 }
-.main_cont{
+.section_cont{
   max-width: 1000px;
   // min-height: calc(100vh - 68px);
   margin: 0 auto;
-}
-.tit_cont{
-  position: relative;
-  padding: 20px 18px;
-  font-size: 17px;
+  .tit_cont{
+    position: relative;
+    padding: 20px 18px;
+    font-size: 15px;
+  }
 }
 /* MainImage */
-.main_visual{
+.section_visual{
   position: relative;
   &::before{
     content: '';
@@ -134,12 +134,13 @@ main{
 }
 
 /* button */
-.wrap_btn{
+.box_btn{
   padding: 12px 18px;
   .btn_more{
     display: block;
     width: 100%;
     padding: 10px 0;
+    font-size: 12px;
     text-align: center;
     color: #fff;
     background: #222;
@@ -154,15 +155,37 @@ main{
   bottom: 0;
   background: #000;
   z-index: 100;
-  box-shadow: 0 -1px 2px 0 rgba(255,255,255,.1);
+  box-shadow: 0 1px 8px 0 rgba(255, 255, 255, .5);
 }
 .list_nav_bottom{
   display: flex;
   .item_nav_bottom{
     flex: 1;
-    .link_nav_bottom{
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    .text{
       display: block;
-      text-align: center;
+      line-height: 10px;
     }
   }
+  .link_nav_bottom{
+    display: block;
+    padding:3px 0;
+  }
+  // .link_category{
+  //   background: url(../img/ico_category.svg) no-repeat center 3px/ 27px;
+  // }
+  // .link_trend{
+  //   background: url(../img/ico_trend.svg) no-repeat center 3px/ 27px;
+  // }  
+  // .link_home{
+  //   background: url(../img/ico_home.svg) no-repeat center 3px/ 27px;
+  // }
+  // .link_favorite{
+  //   background: url(../img/ico_favorite.svg) no-repeat center 3px/ 27px;
+  // }
+  // .link_my{
+  //   background: url(../img/ico_my.svg) no-repeat center 3px/ 17px;
+  // }
 }

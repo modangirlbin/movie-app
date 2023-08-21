@@ -5,7 +5,7 @@
   position: relative;
 }
 .footer .inner_footer {
-  padding: 25px 18px 10px;
+  padding: 25px 18px 57px;
   color: #fff;
   background: #222;
 }
@@ -14,19 +14,51 @@
   clear: both;
   content: "";
 }
+.footer .list_policy {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .list_policy > li:last-child .link_policy::after {
+  display: none;
+}
+.footer .list_policy .link_policy {
+  display: block;
+  position: relative;
+  padding-right: 10px;
+  margin-right: 8px;
+  font-size: 12px;
+}
+.footer .list_policy .link_policy::after {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 1px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.5;
+  content: "";
+}
+.footer .notice_policy {
+  padding-top: 10px;
+  font-size: 11px;
+  line-height: 17px;
+  color: #aaa;
+}
 .footer .contact {
   float: left;
   margin-top: 6px;
-  font-size: 13px;
+  font-size: 12px;
 }
 .footer .logo_footer {
-  float: right;
-  font-size: 13px;
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: right;
 }
 .footer .logo_footer::before {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   margin-right: 5px;
   border: 1px solid #fff;
   border-width: 1px 4px 4px 1px;
