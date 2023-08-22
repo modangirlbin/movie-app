@@ -82,14 +82,12 @@ main.main, main.sub{
   grid-gap: 12px;
   column-gap: 12px;
   padding: 0 18px;
-  .item_card{
-    a{
-      display: block;
-      overflow: hidden;
-      position: relative;
-      display: block;
-      padding-top: 134%;
-    }
+  .link_card{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    padding-top: 134%;
     .inner_card{
       position: absolute;
       top: 0;

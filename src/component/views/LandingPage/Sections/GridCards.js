@@ -2,8 +2,8 @@ import React from 'react';
 
 function GridCards(props) {
   return (
-    <li className='item_card'>
-      <a href={`/movie-app/#/${props.movieId}`}>
+    <li>
+      <a href={`/movie-app/#/${props.movieId}`} className='link_card'>
         <picture className='inner_card'>
           <source srcSet={props.smallImage} media='(max-width:500px)' alt={props.movieName} />
           <img src={props.image} className='thumb_card' alt={props.movieName} loading="lazy" />

@@ -22,7 +22,7 @@ function LandingPage(){
 
     //스크롤시 탑버튼
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 300);
+      setScroll(window.scrollY > 150);
     });
   }, []);
 

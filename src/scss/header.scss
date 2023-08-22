@@ -14,7 +14,7 @@
   &.on{
     background: #000;
   }
-  .title_logo{
+  .tit_logo{
     font-size: 17px;
     font-weight: normal;
     text-align: center;
@@ -32,16 +32,17 @@
     display: block;
     width: 50px;
     height: 50px;
+    flex-shrink: 0;
     background: url(https://img.megabox.co.kr/static/mb/images/common/ico/ico-ticket-w.png) no-repeat 50%/28px;
   }
   .btn_gnb{
     width: 50px;
     height: 50px;
+    flex-shrink: 0;
     background: url(https://img.megabox.co.kr/static/mb/images/common/ico/ico-burger-w.png) no-repeat 50%/28px;
   }
 }
-.wrap_gnb{
-  display: none;
+.nav_gnb{
   position: fixed;
   top: 0;
   bottom: 0;
@@ -52,14 +53,19 @@
   padding: 65px 30px;
   background: #fff;
   box-sizing: border-box;
+  transform: translateX(100%);
+  transition: transform .3s ;
+  will-change: transform;
   &.on{
-    display: block;
+    transform: translateX(0);
   }
   .area_sns{
     padding: 10px 0 15px;
     text-align: center;
-    .title_sns{
+    .tit_sns{
+      display: block;
       padding: 10px 0 15px;
+      font-weight: normal;
       font-size: 14px;
     }
     .btn_sns{
@@ -116,13 +122,13 @@
         border-bottom: 0 none;
       }
     }
-    a{
-      display: block;
-      font-size: 13px;
-      line-height: 40px;
-      color: #333;
-      border-bottom: 1px solid #ddd;
-    }
+  }
+  .link_gnb{
+    display: block;
+    font-size: 13px;
+    line-height: 40px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
   }
   .btn_close{
     position: absolute;
@@ -139,7 +145,7 @@
   height: 50px;
   background: url(../img/ico_back.png) no-repeat 50%/24px;
 }
-.title_sub{
+.tit_sub{
   margin: 0 55px;
   font-size: 17px;
   line-height: 55px;

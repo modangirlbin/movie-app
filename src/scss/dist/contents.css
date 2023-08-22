@@ -85,14 +85,14 @@ main.main, main.sub {
   column-gap: 12px;
   padding: 0 18px;
 }
-.list_cards .item_card a {
+.list_cards .link_card {
   display: block;
   overflow: hidden;
   position: relative;
   display: block;
   padding-top: 134%;
 }
-.list_cards .item_card .inner_card {
+.list_cards .link_card .inner_card {
   position: absolute;
   top: 0;
   left: 0;
@@ -103,12 +103,12 @@ main.main, main.sub {
   white-space: nowrap;
   background: #eee;
 }
-.list_cards .item_card .inner_card::before {
+.list_cards .link_card .inner_card::before {
   content: "";
   display: block;
   padding-top: 150%;
 }
-.list_cards .item_card .vote_card {
+.list_cards .link_card .vote_card {
   position: absolute;
   top: 10px;
   left: 13px;
@@ -119,12 +119,12 @@ main.main, main.sub {
   background: white;
   box-shadow: 1px 1px 1px #aaa;
 }
-.list_cards .item_card .vote_card::before {
+.list_cards .link_card .vote_card::before {
   display: inline-block;
   color: red;
   content: "★";
 }
-.list_cards .item_card .thumb_card {
+.list_cards .link_card .thumb_card {
   position: absolute;
   top: 50%;
   left: 50%;
