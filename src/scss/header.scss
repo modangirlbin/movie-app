@@ -11,19 +11,8 @@
   width: 100%;
   background: linear-gradient(to bottom, rgba(0,0,0,0.43) 0%,rgba(84,84,84,0) 100%);
   // transition: background ease 5s 0;
-  z-index: 1;
   &.on{
     background: #000;
-  }
-  .gnb{
-    display: none;
-    position: absolute;
-    top: 65px;
-    right: 12px;
-    z-index: 1;
-    &.on{
-      display: block;
-    }
   }
   .title_logo{
     font-size: 17px;
@@ -50,31 +39,95 @@
     height: 50px;
     background: url(https://img.megabox.co.kr/static/mb/images/common/ico/ico-burger-w.png) no-repeat 50%/28px;
   }
-  
-  .list_gnb{
-    width: 125px;
-    padding: 15px 0;
-    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.wrap_gnb{
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 65px 30px;
+  background: #fff;
+  box-sizing: border-box;
+  &.on{
+    display: block;
+  }
+  .area_sns{
+    padding: 10px 0 15px;
     text-align: center;
-    border-radius: 20px;
-    box-shadow: inset 0 0 10px #fff;
-    background: rgba(255,255,255,.3);
+    .title_sns{
+      padding: 10px 0 15px;
+      font-size: 14px;
+    }
+    .btn_sns{
+      width: 40px;
+      height: 40px;
+      margin: 4px;
+      border-radius: 50%;
+      overflow: hidden;
+      &.btn_kakao{
+        background: #FFDA00;
+      }
+      &.btn_naver{
+        background: #03c75a;
+      }
+      &.btn_facebook{
+        background: #1877f2;
+      }
+      &.btn_apple{
+        background: #000;
+      }
+    }
+  }
+  .area_email{
+    display: grid;
+    grid-row-gap: 10px;
+    font-size: 12px;
+    text-align: center;
+    .link_login{
+      grid-column: 1/3;
+      grid-row: 1;
+      height: 40px;
+      margin-top: 20px;
+      line-height: 40px;
+      border: 1px solid #aaa;
+      border-radius: 20px;
+    }
+    .link_join{
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .link_key{
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+  .list_gnb{
+    width: 200px;
+    margin: 35px auto 0;
+    text-align: center;
   }
   .item_gnb{
+    &:last-child{
+      a{
+        border-bottom: 0 none;
+      }
+    }
     a{
       display: block;
-      width: 100px;
-      margin: 5px auto;
       font-size: 13px;
-      line-height: 26px;
-      font-weight: bold;
-      text-align: center;
-      border: 2px solid rgba(255, 255, 255, 0.7);
-      border-radius: 20px;
+      line-height: 40px;
       color: #333;
-      background: rgba(255,255,255,.7);
-      box-shadow: inset 0 0 10px #fff;
+      border-bottom: 1px solid #ddd;
     }
+  }
+  .btn_close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
   }
 }
 

@@ -14,11 +14,16 @@ function LandingPage(){
 
   // const {mvnumber} = useParams();
   // console.log(mvnumber);
+  const [ scroll, setScroll ] = useState(false);
 
   useEffect(() => {
     const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=ko&page=1`;
-    
     fetchMovies(endpoint);
+
+    //스크롤시 탑버튼
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 300);
+    });
   }, []);
 
   const fetchMovies = (endpoint) => {
@@ -81,6 +86,10 @@ function LandingPage(){
             <button className="btn_more" onClick={loadMoreItems}> Load More</button>
           </div>
         </section>
+        <button className={scroll ? "btn_go_top on" : "btn_go_top"} type='button'>
+          <span className='offscreen'>맨 위로</span>
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"><path d="M24 22L15 13L9.5 18.5M8 20L6 22M5 9H25" stroke="white"></path></svg>
+        </button>
         <BottomNav />
       </main>
     </>

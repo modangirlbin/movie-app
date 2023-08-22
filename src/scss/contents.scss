@@ -146,6 +146,25 @@ main.main, main.sub{
     background: #222;
   }
 }
+/* top button */
+.btn_go_top{
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0 1px 8px 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(100px);
+  transition: transform .2s;
+  will-change: transform;
+  &.on{
+    bottom: 65px; 
+    transform: translateY(0px);
+  }
+}
+
 
 /* bottom nav */
 .wrap_nav_bottom{
@@ -154,7 +173,6 @@ main.main, main.sub{
   right: 0;
   bottom: 0;
   background: #000;
-  z-index: 100;
   box-shadow: 0 1px 8px 0 rgba(255, 255, 255, .5);
 }
 .list_nav_bottom{
