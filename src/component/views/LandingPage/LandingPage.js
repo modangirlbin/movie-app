@@ -89,7 +89,7 @@ function LandingPage(){
             ))
             }
           </ul>
-          <div className='box_btn'>
+          <div className='box_btn_more'>
             <button className="btn_more" onClick={loadMoreItems}> Load More</button>
           </div>
         </section>

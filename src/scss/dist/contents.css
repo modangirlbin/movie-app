@@ -133,10 +133,10 @@ main.main, main.sub {
 }
 
 /* button */
-.box_btn {
+.box_btn_more {
   padding: 12px 18px;
 }
-.box_btn .btn_more {
+.box_btn_more .btn_more {
   display: block;
   width: 100%;
   padding: 10px 0;

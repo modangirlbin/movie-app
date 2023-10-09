@@ -20,12 +20,9 @@
   text-align: center;
   color: white;
 }
-.header .tit_logo a {
-  position: relative;
+.header .tit_logo .link_logo {
   display: block;
-}
-.header .tit_logo a img {
-  height: 55px;
+  width: 120px;
 }
 .header .link_ticket {
   display: block;
@@ -59,57 +56,59 @@
 .nav_gnb.on {
   transform: translateX(0);
 }
-.nav_gnb .area_sns {
+.nav_gnb .section_login {
   padding: 10px 0 15px;
   text-align: center;
 }
-.nav_gnb .area_sns .tit_sns {
+.nav_gnb .section_login .tit_sns {
   display: block;
   padding: 10px 0 15px;
   font-weight: normal;
   font-size: 14px;
 }
-.nav_gnb .area_sns .btn_sns {
+.nav_gnb .section_login .list_sns {
+  display: flex;
+  justify-content: center;
+}
+.nav_gnb .section_login .btn_sns {
   width: 40px;
   height: 40px;
   margin: 4px;
   border-radius: 50%;
   overflow: hidden;
 }
-.nav_gnb .area_sns .btn_sns.btn_kakao {
+.nav_gnb .section_login .btn_sns.btn_kakao {
   background: #FFDA00;
 }
-.nav_gnb .area_sns .btn_sns.btn_naver {
+.nav_gnb .section_login .btn_sns.btn_naver {
   background: #03c75a;
 }
-.nav_gnb .area_sns .btn_sns.btn_facebook {
+.nav_gnb .section_login .btn_sns.btn_facebook {
   background: #1877f2;
 }
-.nav_gnb .area_sns .btn_sns.btn_apple {
+.nav_gnb .section_login .btn_sns.btn_apple {
   background: #000;
 }
-.nav_gnb .area_email {
-  display: grid;
-  grid-row-gap: 10px;
-  font-size: 12px;
-  text-align: center;
-}
-.nav_gnb .area_email .link_login {
-  grid-column: 1/3;
-  grid-row: 1;
+.nav_gnb .link_login {
+  display: block;
   height: 40px;
   margin-top: 20px;
   line-height: 40px;
   border: 1px solid #aaa;
   border-radius: 20px;
+  font-size: 12px;
+  text-align: center;
 }
-.nav_gnb .area_email .link_join {
-  grid-column: 1;
-  grid-row: 2;
+.nav_gnb .box_join {
+  display: flex;
+  margin-top: 20px;
+  font-size: 12px;
 }
-.nav_gnb .area_email .link_key {
-  grid-column: 2;
-  grid-row: 2;
+.nav_gnb .box_join .link_join {
+  flex: 1;
+}
+.nav_gnb .box_join .link_key {
+  flex: 1;
 }
 .nav_gnb .list_gnb {
   width: 200px;
